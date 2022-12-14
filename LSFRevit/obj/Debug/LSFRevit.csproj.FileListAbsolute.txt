@@ -1,0 +1,10 @@
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\bin\Debug\LSFRevit.addin
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\bin\Debug\LSFRevit.dll
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\bin\Debug\LSFRevit.pdb
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.Form1.resources
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.Properties.resources.resources
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.csproj.GenerateResource.cache
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.csproj.CoreCompileInputs.cache
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.dll
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.pdb
+C:\Users\velos\source\repos\MeuPrimeiroPlugin\LSFRevit\obj\Debug\LSFRevit.csprojAssemblyReference.cache

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>LSFRevit</Name>
+		<Assembly>LSFRevit.dll</Assembly>
+		<ClientId>
+		     C2993677-329E-4067-B210-52162D37D44E
+		</ClientId>
+		<FullClassName>LSFRevit.App</FullClassName>
+		<Text>LSFWalls</Text>
+		<Description>LSFWalls</Description>
+		<VendorId>Gabriel Veloso</VendorId>
+		<VendorDescription>gveloso072</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+</RevitAddIns>
+
