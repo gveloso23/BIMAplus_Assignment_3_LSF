@@ -360,7 +360,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nHostWall = IN[0]\r\nPanelName = IN[1]\r\nFrameNumber = IN[2]\r\n\r\ncountpanels = {}\r\ndicpanels = {}\r\n\r\nfor panel in PanelName:\r\n    if panel not in dicpanels:\r\n        countpanels[panel] = PanelName.count(panel)\r\n        dicframes = {}\r\n        for frame in range(len(PanelName)):\r\n            if PanelName[frame] == panel:\r\n                dicframes[FrameNumber[frame]] = FrameNumber.count(FrameNumber[frame])\r\n\r\n        dicpanels[panel] = dicframes\r\n\r\n\r\nOUT = countpanels, dicpanels   \r\n",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nHostWall = IN[0]\r\nPanelName = IN[1]\r\nFrameNumber = IN[2]\r\n\r\ncountpanels = {}\r\ndicpanels = {}\r\n\r\nfor panel in PanelName:\r\n    if panel not in dicpanels:\r\n        countpanels[panel] = PanelName.count(panel)\r\n        dicframes = {}\r\n        countframes = 0\r\n        for frame in range(len(PanelName)):\r\n            if PanelName[frame] == panel:\r\n                dicframes[FrameNumber[frame]] = dicframes.setdefault(FrameNumber[frame],0) + 1\r\n\r\n        dicpanels[panel] = dicframes\r\n\r\n\r\nOUT = countpanels, dicpanels   \r\n",
       "Engine": "CPython3",
       "VariableInputPorts": true,
       "Id": "8c378f372a8042ba977227af69e82563",
@@ -1681,7 +1681,7 @@
     {
       "Start": "bc851c15c6c045b1af5adbd2c44fd7dd",
       "End": "695e3db79cc14a7193161b2b5d58cff1",
-      "Id": "e748f4a67c3741d39fb75c7deb449e6a",
+      "Id": "a9b6ae65519941bbb67b3ab8ace37087",
       "IsHidden": "False"
     },
     {
@@ -2199,7 +2199,7 @@
         "Height": 514.8,
         "FontSize": 36.0,
         "InitialTop": 149.28306183487746,
-        "InitialHeight": 302.13749999999993,
+        "InitialHeight": 302.1375,
         "TextblockHeight": 105.6,
         "Background": "#FFC1D676"
       },
@@ -2271,7 +2271,7 @@
         "Height": 512.03815891857676,
         "FontSize": 36.0,
         "InitialTop": 156.32150182995622,
-        "InitialHeight": 469.63815891857683,
+        "InitialHeight": 452.83815891857682,
         "TextblockHeight": 62.4,
         "Background": "#FFC1D676"
       },
@@ -2295,7 +2295,7 @@
         "Height": 590.6,
         "FontSize": 36.0,
         "InitialTop": 12.987470577494179,
-        "InitialHeight": 548.57494115498844,
+        "InitialHeight": 501.0,
         "TextblockHeight": 62.4,
         "Background": "#FFC1D676"
       },
@@ -2325,7 +2325,7 @@
         "Height": 418.2,
         "FontSize": 36.0,
         "InitialTop": 56.688999420871255,
-        "InitialHeight": 474.89682933794279,
+        "InitialHeight": 359.0,
         "TextblockHeight": 62.4,
         "Background": "#FFC1D676"
       },
@@ -2353,7 +2353,7 @@
         "Height": 412.59999999999991,
         "FontSize": 36.0,
         "InitialTop": 645.75330364431977,
-        "InitialHeight": 456.03031062116122,
+        "InitialHeight": 323.0,
         "TextblockHeight": 62.4,
         "Background": "#FFC1D676"
       },
@@ -2374,13 +2374,13 @@
         "Height": 357.79999999999995,
         "FontSize": 36.0,
         "InitialTop": 394.556092005011,
-        "InitialHeight": 229.0,
+        "InitialHeight": 145.0,
         "TextblockHeight": 148.79999999999998,
         "Background": "#FFC1D676"
       }
     ],
-    "X": -1342.4997633150847,
-    "Y": 22.275780720439911,
-    "Zoom": 0.61141148865710693
+    "X": -1022.6744674971018,
+    "Y": -322.41394607401594,
+    "Zoom": 0.97633277511381689
   }
 }
